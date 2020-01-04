@@ -12,15 +12,17 @@ See https://github.com/littlekernel/lk/wiki for documentation.
 
 ## To build and test for ARM on linux
 
-1. install or build qemu. v2.4 and above is recommended.
-2. install gcc for embedded arm (see note 1)
+1. install or build qemu. v2.4 and above is recommended. (see note 1)
+2. install gcc for embedded arm (see note 2)
 3. run scripts/do-qemuarm  (from the lk directory)
 4. you should see 'welcome to lk/MP'
 
 This will get you a interactive prompt into LK which is running in qemu
 arm machine 'virt' emulation. type 'help' for commands.
 
-note 1: for ubuntu:
-sudo apt-get install gcc-arm-none-eabi
-or fetch a prebuilt toolchain from
-http://newos.org/toolchains/arm-eabi-5.3.0-Linux-x86_64.tar.xz
+To exit, [CTRL-A] followed by [x].
+
+note 1: for ubuntu or debian: `sudo apt-get install qemu-system-arm`
+
+note 2: for ubuntu or debian: `sudo apt-get install gcc-arm-none-eabi`
+or fetch a prebuilt toolchain from <http://newos.org/toolchains/arm-eabi-5.3.0-Linux-x86_64.tar.xz>
